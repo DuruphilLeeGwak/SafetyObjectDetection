@@ -154,6 +154,16 @@ python -m venv .venv
 source .venv/bin/activate  # (Windows는 .venv\Scripts\activate)
 pip install -r requirements.txt
 
+#1-1) conda 가상환경 사용 및 cuda 버전에 맞는 PyTorch설치(Windows 기반 설명)
+conda activate "virtualEnvironment name"
+pip uninstall -y torch torchvision torchaudio
+
+pip install --index-url https://download.pytorch.org/whl/cu130 torch torchvision torchaudio
+
+#1-2) 설치 확인
+python -c "import torch; print(torch.__version__); print('cuda avail', torch.cuda.is_available()); print('torch cuda', torch.version.cuda); print('gpu', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NO GPU')"
+
+
 # 2) 실행
 streamlit run app.py
 ```
@@ -168,9 +178,7 @@ streamlit run app.py
 ├─ weights/
 │  ├─ yolo_best.pt                 # TODO: YOLO 가중치
 │  └─ rtdetr_best.pt               # TODO: RT-DETR(v1) 가중치
-├─ data/
-│  └─ ppe_relabelled/              # 리라벨링 완료 데이터
-├─ notebooks/                      # EDA/실험 노트
+├─ outputs/                        # 자동생성(비디오 결과물 저장)
 ├─ scripts/                        # 학습/평가/변환 스크립트
 └─ assets/
    ├─ images/                      # README 이미지
@@ -194,7 +202,7 @@ streamlit run app.py
 - 미착용(no-*) 케이스 중심으로 데이터 추가(특히 no-goggles / no-gloves / no-helmet)
 - 한국 산업현장 이미지 추가로 도메인 갭 완화
 - gloves의 손 모양/가림(occlusion) 대응을 위한 데이터 다양화 및 후처리 개선
-- RT-DETR v2의 웹앱 연동(후처리/시각화 파이프라인 정리) 재도전
+- RT-DETR v2의 웹앱 연동(후처리/시각화 파이프라인 정리) 재도전 가능성 재고.
 
 ---
 
