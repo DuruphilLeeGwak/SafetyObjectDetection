@@ -19,7 +19,6 @@
 > 아래 파일을 `assets/videos/`에 추가하면 README에서 바로 재생됩니다.
 
 ```html
-<!-- TODO: assets/videos/demo_webcam_yolo_vs_rtdetr.mp4 추가 -->
 <video src="assets/videos/demo_webcam_yolo_vs_rtdetr.mp4" controls muted playsinline></video>
 ```
 
