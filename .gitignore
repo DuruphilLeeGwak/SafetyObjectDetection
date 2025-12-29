@@ -34,10 +34,7 @@ ENV/
 # 학습된 모델 및 결과물
 /models/
 /checkpoints/
-/outputs/
-*.pt
 *.pth
-*.weights
 *.h5
 *.onnx
 
