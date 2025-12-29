@@ -16,10 +16,10 @@
 
 ### 1-1) 웹캠 실시간 데모 (영상 자리)
 
-> 아래 파일을 `assets/videos/`에 추가하면 README에서 바로 재생됩니다.
+
+https://github.com/user-attachments/assets/10118e08-5901-4ba4-903f-97f08354e21f
 
 
-https://github.com/user-attachments/assets/0d622b5f-e97a-4439-aaa0-7c41df015655
 
 
 ### 1-2) 결과 스냅샷
