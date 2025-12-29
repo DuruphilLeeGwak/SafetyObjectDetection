@@ -18,7 +18,7 @@
 
 > 아래 파일을 `assets/videos/`에 추가하면 README에서 바로 재생됩니다.
 
-[![Webcam Demo](assets/images/demo_thumbnail.png)](assets/videos/demo_webcam_yolo_vs_rtdetr.mp4)
+[![Webcam Demo](assets/images/demo_thumbnail.png)](assets/videos/demo.mp4)
 
 ### 1-2) 결과 스냅샷
 
