@@ -18,7 +18,7 @@
 
 > 아래 파일을 `assets/videos/`에 추가하면 README에서 바로 재생됩니다.
 
-[![Webcam Demo](assets/images/demo_thumbnail.png)](assets/videos/demo.mp4)
+<video controls src="https://user-images.githubusercontent.com/XXXX/demo.mp4"></video>
 
 ### 1-2) 결과 스냅샷
 
