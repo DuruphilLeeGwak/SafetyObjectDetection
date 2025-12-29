@@ -170,7 +170,7 @@ streamlit run app.py
 
 ---
 
-## 7. (권장) 레포 구조
+## 7. 레포 구조
 
 ```text
 .
